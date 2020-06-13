@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
-var motion: Vector2 = Vector2(0, 0)
+var motion: Vector2 = Vector2.ZERO
 
 const SPEED: int = 1500
 const GRAVITY: int = 300
 
-const UP_DIRECTION: Vector2 = Vector2(0, -1)
+const UP_DIRECTION: Vector2 = Vector2.UP
 
 const JUMP_SPEED: int = 5000 
 
@@ -24,6 +24,8 @@ func _physics_process(delta: float):
 func apply_gravity():
     if is_on_floor():
         motion.y = 0
+    elif is_on_ceiling():
+        motion.y = Vector2.DOWN.y
     else:
         motion.y += GRAVITY
 
