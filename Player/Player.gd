@@ -11,6 +11,8 @@ const JUMP_SPEED: int = 3500
 
 const WORLD_LIMIT: int = 4000
 
+var lives: int = 3
+
 signal animate
 
 func _physics_process(delta: float):
@@ -56,3 +58,14 @@ func animate():
 
 func end_game():
     get_tree().change_scene("res://Levels/GameOver.tscn")
+
+
+func hurt():
+    position.y -= 1
+    yield(get_tree(), "idle_frame")
+
+    motion.y -= JUMP_SPEED
+    lives -= 1
+
+    if lives < 0:
+        end_game()
