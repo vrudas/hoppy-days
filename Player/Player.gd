@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-var motion: Vector2 = Vector2.ZERO
-
 const SPEED: int = 1500
 const GRAVITY: int = 150
 
@@ -12,8 +10,10 @@ const JUMP_SPEED: int = 3500
 const WORLD_LIMIT: int = 4000
 
 var lives: int = 3
+var motion: Vector2 = Vector2.ZERO
 
 signal animate
+
 
 func _physics_process(delta: float):
     apply_gravity()
@@ -39,6 +39,7 @@ func apply_gravity():
 func jump():
     if Input.is_action_pressed("jump") and is_on_floor():
         motion.y -= JUMP_SPEED
+        play_jump_sound()
 
 
 func move():
@@ -67,5 +68,15 @@ func hurt():
     motion.y -= JUMP_SPEED
     lives -= 1
 
+    play_hurt_sound()
+
     if lives < 0:
         end_game()
+
+
+func play_jump_sound():
+    $JumpSFX.play()
+
+
+func play_hurt_sound():
+    $HurtSFX.play()
