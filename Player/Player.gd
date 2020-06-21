@@ -6,6 +6,7 @@ const GRAVITY: int = 150
 const UP_DIRECTION: Vector2 = Vector2.UP
 
 const JUMP_SPEED: int = 3500
+const JUMP_BOOST_MULTIPLIER: float = 1.5
 
 const WORLD_LIMIT: int = 4000
 
@@ -80,3 +81,10 @@ func play_jump_sound():
 
 func play_hurt_sound():
     $HurtSFX.play()
+
+
+func boost():
+    position.y -= 1
+    yield(get_tree(), "idle_frame")
+
+    motion.y -= JUMP_SPEED * JUMP_BOOST_MULTIPLIER
