@@ -13,7 +13,6 @@ const WORLD_LIMIT: int = 4000
 var motion: Vector2 = Vector2.ZERO
 
 signal animate
-signal death
 
 func _physics_process(delta: float):
     apply_gravity()

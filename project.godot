@@ -19,11 +19,6 @@ config/name="Hoppy Days"
 run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-UserData="*res://addons/github-integration/scripts/user_data.gd"
-IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
-
 [editor_plugins]
 
 enabled=PoolStringArray(  )
