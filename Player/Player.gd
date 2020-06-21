@@ -10,11 +10,10 @@ const JUMP_BOOST_MULTIPLIER: float = 1.5
 
 const WORLD_LIMIT: int = 4000
 
-var lives: int = 3
 var motion: Vector2 = Vector2.ZERO
 
 signal animate
-
+signal death
 
 func _physics_process(delta: float):
     apply_gravity()
@@ -59,20 +58,15 @@ func animate():
 
 
 func end_game():
-    get_tree().change_scene("res://Levels/GameOver.tscn")
-
+    get_tree().call_group("Gamestate", "end_game")
 
 func hurt():
     position.y -= 1
     yield(get_tree(), "idle_frame")
 
     motion.y -= JUMP_SPEED
-    lives -= 1
 
     play_hurt_sound()
-
-    if lives < 0:
-        end_game()
 
 
 func play_jump_sound():
