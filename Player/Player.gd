@@ -66,6 +66,7 @@ func hurt():
     motion.y -= JUMP_SPEED
 
     play_hurt_sound()
+    get_tree().call_group("GUI", "hurt")
 
 
 func play_jump_sound():
