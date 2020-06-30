@@ -53,7 +53,7 @@ func move():
 
 
 func animate():
-    emit_signal("animate", motion) 
+    emit_signal("animate", motion)
 
 
 func end_game():
