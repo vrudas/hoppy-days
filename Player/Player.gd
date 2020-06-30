@@ -27,7 +27,7 @@ func _physics_process(delta: float):
 func apply_gravity():
     if position.y > WORLD_LIMIT:
         end_game()
-    if is_on_floor():
+    if is_on_floor() and motion.y > 0:
         motion.y = 0
     elif is_on_ceiling():
         motion.y = Vector2.DOWN.y
@@ -63,7 +63,7 @@ func hurt():
     position.y -= 1
     yield(get_tree(), "idle_frame")
 
-    motion.y -= JUMP_SPEED
+    motion.y = -JUMP_SPEED
 
     play_hurt_sound()
     get_tree().call_group("GUI", "hurt")
@@ -81,4 +81,4 @@ func boost():
     position.y -= 1
     yield(get_tree(), "idle_frame")
 
-    motion.y -= JUMP_SPEED * JUMP_BOOST_MULTIPLIER
+    motion.y = -JUMP_SPEED * JUMP_BOOST_MULTIPLIER
