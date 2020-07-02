@@ -37,34 +37,35 @@ position = Vector2( 2291.65, 1419.5 )
 [node name="Coins" type="Node" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 826.57, 1146.02 )
+position = Vector2( 752.344, 1140.03 )
+play_taken_animation = true
 
 [node name="Coin2" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 936.437, 1094.32 )
+position = Vector2( 921.148, 953.272 )
 
 [node name="Coin3" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 1036.61, 1010.3 )
+position = Vector2( 1052.84, 953.272 )
 
 [node name="Coin4" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 1114.16, 926.282 )
+position = Vector2( 1130.66, 1205.88 )
 
 [node name="Coin5" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 1359.75, 1003.84 )
+position = Vector2( 1412, 1013.13 )
 
 [node name="Coin6" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 1466.39, 1003.84 )
+position = Vector2( 1737.63, 1013.13 )
 
 [node name="Coin7" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 1753.98, 1000.6 )
+position = Vector2( 2409.26, 1396.23 )
 
 [node name="Coin8" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 2406.73, 1381.91 )
+position = Vector2( 2628.35, 1197.5 )
 
 [node name="Coin9" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 2594.15, 1197.72 )
+position = Vector2( 2588.84, 754.538 )
 
 [node name="Coin10" parent="Coins" instance=ExtResource( 8 )]
-position = Vector2( 2826.81, 1104.01 )
+position = Vector2( 2816.31, 190.66 )
 
 [node name="JumpPads" type="Node" parent="."]
 

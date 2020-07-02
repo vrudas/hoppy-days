@@ -4,10 +4,10 @@
 [ext_resource path="res://GFX/Items/Coockies/8.png" type="Texture" id=2]
 [ext_resource path="res://Items/Coin.gd" type="Script" id=4]
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 radius = 42.6803
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "die"
 length = 0.5
 tracks/0/type = "value"
@@ -48,12 +48,12 @@ texture = ExtResource( 2 )
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
 volume_db = -5.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/die = SubResource( 3 )
+anims/die = SubResource( 2 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
