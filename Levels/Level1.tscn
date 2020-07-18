@@ -51,9 +51,6 @@ position = Vector2( 5749.85, 1226.18 )
 [node name="SpikeTop8" parent="Hazards" instance=ExtResource( 3 )]
 position = Vector2( 49.4348, 1546.04 )
 
-[node name="SpikeTop9" parent="Hazards" instance=ExtResource( 3 )]
-position = Vector2( 15935, 1990.69 )
-
 [node name="Coins" type="Node" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource( 8 )]
