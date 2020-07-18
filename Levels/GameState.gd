@@ -12,6 +12,10 @@ func _ready():
     update_GUI()
 
 
+func _process(delta: float) -> void:
+    exit_game()
+
+
 func hurt():
     lives -= 1
 
@@ -46,3 +50,8 @@ func end_game():
 
 func win_game():
     get_tree().change_scene("res://Levels/Victory.tscn")
+
+
+func exit_game() -> void:
+    if Input.is_key_pressed(KEY_ESCAPE):
+        get_tree().quit()
