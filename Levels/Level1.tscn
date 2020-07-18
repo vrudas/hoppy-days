@@ -51,6 +51,9 @@ position = Vector2( 5749.85, 1226.18 )
 [node name="SpikeTop8" parent="Hazards" instance=ExtResource( 3 )]
 position = Vector2( 49.4348, 1546.04 )
 
+[node name="SpikeTop9" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 15935, 1990.69 )
+
 [node name="Coins" type="Node" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource( 8 )]
@@ -201,7 +204,7 @@ position = Vector2( 568.163, 756.757 )
 position = Vector2( 2415.05, 219.845 )
 
 [node name="Cloud3" parent="NPCs" instance=ExtResource( 10 )]
-position = Vector2( 3331.9, 712.96 )
+position = Vector2( 3531.57, 480.013 )
 
 [node name="Cloud4" parent="NPCs" instance=ExtResource( 10 )]
 position = Vector2( 6376.89, 258.263 )
@@ -237,4 +240,4 @@ position = Vector2( 15623.1, -2104.49 )
 position = Vector2( 15623.1, -2104.49 )
 
 [node name="Portal" parent="." instance=ExtResource( 11 )]
-position = Vector2( 16483.4, 1112.65 )
+position = Vector2( 16327.7, 1072.42 )
