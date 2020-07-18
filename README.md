@@ -9,10 +9,10 @@ so it's not pretending to be a fully completed game and may contain some bugs or
 ![alt text](https://github.com/vrudas/hoppy-days/blob/master/Docs/level_screen.png "Game Level")
 
 - Game Win Screen
-![alt text](https://github.com/vrudas/hoppy-days/blob/master/Docs/game_win.png "Game Win Screen")
+![alt text](https://github.com/vrudas/hoppy-days/blob/master/Docs/game_win_screen.png "Game Win Screen")
 
 - Game Over Screen
-![alt text](https://github.com/vrudas/hoppy-days/blob/master/Docs/game_over.png "Game Over Screen")
+![alt text](https://github.com/vrudas/hoppy-days/blob/master/Docs/game_over_screen.png "Game Over Screen")
 
 
 ## Game Controls
