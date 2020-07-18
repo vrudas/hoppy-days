@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Tileset.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=8]
 [ext_resource path="res://NPCs/Spikeman.tscn" type="PackedScene" id=9]
 [ext_resource path="res://NPCs/Cloud.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Items/Portal.tscn" type="PackedScene" id=11]
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 39.8112, 740.488 )
@@ -99,3 +100,6 @@ position = Vector2( 2288.77, 1368.29 )
 
 [node name="Cloud" parent="NPCs" instance=ExtResource( 10 )]
 position = Vector2( 1004.21, 709.142 )
+
+[node name="Portal" parent="." instance=ExtResource( 11 )]
+position = Vector2( 7059.19, 942.217 )
