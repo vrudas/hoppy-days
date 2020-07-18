@@ -1,6 +1,6 @@
 extends Node2D
 
-const SPEED: int = 300
+const SPEED: int = 600
 
 func _ready() -> void:
     set_as_toplevel(true)
@@ -22,6 +22,7 @@ func handle_collision() -> void:
 
 func handle_player_collision() -> void:
     get_tree().call_group("Gamestate", "hurt")
+
 
 func _on_VisibilityNotifier2D_screen_exited() -> void:
     destroy()
