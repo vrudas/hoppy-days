@@ -39,3 +39,9 @@ so it's not pretending to be a fully completed game and may contain some bugs or
 - JumpPad: increase Player jump height on entering
 
 - Portal: the endpoint of a game that indicates successful completion of level
+
+## Download
+
+- [Hoppy Days Windows Build](https://github.com/vrudas/hoppy-days/blob/master/Bin/win/hoppy-days.exe)
+
+- [Hoppy Days macOS Build](https://github.com/vrudas/hoppy-days/blob/master/Bin/mac/hoppy-days.dmg)
